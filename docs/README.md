@@ -96,7 +96,7 @@ Within the `preload()` function, load the image using the `loadImage()` function
 ```js
 function preload() {
   classifier = ml5.imageClassifier("MobileNet");
-  img = loadImage("images/bird.png");
+  img = loadImage("bird.png");
 }
 ```
 
