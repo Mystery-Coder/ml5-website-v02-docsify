@@ -22,7 +22,7 @@ We will be using a p5.js sketch running on the [p5.js web editor](https://editor
 Once you have the p5.js web editor open, unfold the project directory by clicking the arrow `>` at the top left corner.
 
 <center>
-    <img alt="screenshot of sketch files on the p5 web editor interface" width="800" src="assets/gettingstarted-sketch-folder-alpha.png">
+    <img alt="screenshot of sketch files on the p5 web editor interface" width="800" src="assets/gettingstarted-01-open-project-directory.png">
 </center>
 
 Now, let's switch to the `index.html` file and copy and paste the following CDN link inside the `<head>` tag.
@@ -32,7 +32,7 @@ Now, let's switch to the `index.html` file and copy and paste the following CDN 
 ```
 
 <center>
-    <img alt="screenshot of importing ml5 library in index.html file" width="800" src="assets/gettingstarted-import-lib-alpha.png">
+    <img alt="screenshot of importing ml5 library in index.html file" width="800" src="assets/gettingstarted-02-import-library.png">
 </center>
 
 We can check if the ml5.js library has been imported successfully by using the `console.log()` method. Use the project directory to switch back to the `sketch.js` file and include this line of code inside the `setup()` function:
@@ -44,13 +44,13 @@ console.log("ml5 version:", ml5.version);
 Press the run button on the top left corner of the editor to run the sketch.
 
 <center>
-    <img alt="screenshot of adding console.log method to p5 sketch" width="800" src="assets/gettingstarted-ml5-version-run.png">
+    <img alt="screenshot of adding console.log method to p5 sketch" width="800" src="assets/gettingstarted-03-ml5-version-run.png">
 </center>
 
 If everything loaded properly, you should see the version number of the ml5.js library show up in the console.
 
 <center>
-    <img alt="screenshot of p5 console showing ml5 version" width="800" src="assets/gettingstarted-ml5-version-console.png">
+    <img alt="screenshot of p5 console showing ml5 version" width="800" src="assets/gettingstarted-04-ml5-version-console.png">
 </center>
 
 ## Load pretrained ml5.js model {docsify-ignore}
@@ -73,22 +73,16 @@ function preload() {
 
 ## Load an image for the model to identify {docsify-ignore}
 
-Let's unfold the project directory again by clicking the arrow `>` at the top left corner of the p5.js editor.
+Let's unfold the project directory again by clicking the arrow `>` at the top left corner of the p5.js editor. Select the `+` and choose `Upload File` on the drop-down menu. This will allow you to upload files from your computer to the p5.js web editor. Make sure you are logged in to see this option.
 
 <center>
-    <img alt="screenshot of opening sketch files on the p5 web editor interface" width="800" src="assets/gettingstarted-sketch-folder-alpha.png">
+    <img alt="screenshot of uploading file to p5 web editor" width="800" src="assets/gettingstarted-05-upload-file.png">
 </center>
 
-Select the `+` to create a new folder called `images`.
+For this example, we are going to upload a bird image for image classification. Please choose a bird image and name the file `bird.png`.
 
 <center>
-    <img alt="screenshot of creating images folder" width="800" src="assets/gettingstarted-create_folder_alpha.png">
-</center>
-
-To upload files to the folder, choose the `images` folder in the project directory and upload an image using the drop-down menu. For this example, we are uploading an image of a bird called `bird.png`. Make sure you are logged in to see this option.
-
-<center>
-    <img alt="screenshot of uploading file to p5 web editor" width="800" src="assets/gettingstarted-upload-file-alpha.png">
+    <img alt="screenshot of uploading file to p5 web editor" width="800" src="assets/gettingstarted-06-upload-bird.png">
 </center>
 
 Once the image is uploaded, go back to the `sketch.js` file and define a variable called `img` to hold the image you want to classify.
@@ -192,7 +186,7 @@ Now, you are ready to see the results! Run your sketch and see if the model can 
 You should get something like this:
 
 <center>
-    <img alt="screenshot of running a sketch" width=`800` src="assets/gettingstarted-run-sketch-alpha.png">
+    <img alt="screenshot of running a sketch" width=`800` src="assets/gettingstarted-07-run-sketch.png">
 </center>
 
 ## And voilà! {docsify-ignore}
